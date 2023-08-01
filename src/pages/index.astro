@@ -29,7 +29,10 @@ const ogurl = "" + new URL(ogimage?.src ?? "/og", Astro.site);
     id="app"
     class="relative flex flex-col items-center h-full min-h-screen pt-4 bg-gradient-to-t from-neutral-100 to-white"
   >
-    <a href="https://github.com/BryceRussell/removebg-bulk" class="absolute top-2 right-2 md:top-4 md:right-4 text-neutral-300 hover:text-blue-300 hover:scale-105">
+    <a
+      href="https://github.com/BryceRussell/removebg-bulk"
+      class="absolute top-2 right-2 md:top-4 md:right-4 text-neutral-300 hover:text-blue-300 hover:scale-105"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="36"
@@ -98,7 +101,7 @@ const ogurl = "" + new URL(ogimage?.src ?? "/og", Astro.site);
             id="autodownload"
             class="cursor-pointer mt-0.5"
           />
-          Auto
+           Auto
         </label>
         <button
           name="download"
@@ -109,7 +112,7 @@ const ogurl = "" + new URL(ogimage?.src ?? "/og", Astro.site);
     </section>
     <section
       name="gallery"
-      class="flex flex-wrap items-center justify-center w-full gap-4 mb-auto py-4 lg:px-32"
+      class="flex flex-wrap items-center justify-center w-full max-w-[175ch] gap-4 mb-auto py-8 lg:px-32"
     >
     </section>
     <footer
@@ -142,8 +145,7 @@ const ogurl = "" + new URL(ogimage?.src ?? "/og", Astro.site);
     </footer>
     <template name="template">
       <img
-        class="relative w-1/4 sm:w-1/5 md:w-1/6 h-auto outline outline-2 outline-offset-4 outline-transparent"
-        height="100"
+        class="relative w-52 h-auto outline outline-2 outline-offset-4 outline-transparent"
       />
     </template>
   </body>
@@ -318,6 +320,6 @@ const ogurl = "" + new URL(ogimage?.src ?? "/og", Astro.site);
 
 <style is:global>
   [name="gallery"] img:first-child:nth-last-child(1) {
-    width: 60%;
+    width: 24rem;
   }
 </style>
