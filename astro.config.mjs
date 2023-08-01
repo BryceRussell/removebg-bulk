@@ -6,7 +6,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: import.meta.env.DEV
     ? 'http:/localhost:3000/'
-    : 'http:/localhost:3000/',
+    : 'https://removebg-bulk.netlify.app/',
   integrations: [tailwind()],
   experimental: {
     assets: true
