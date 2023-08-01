@@ -1,6 +1,6 @@
 # Remove Background Bulk
 
-Remove the background from your images in bulk
+Remove the background from your images in bulk for free
 
 - Free
 - Bulk/Automatic
