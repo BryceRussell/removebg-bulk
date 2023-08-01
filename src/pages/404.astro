@@ -1,0 +1,32 @@
+---
+import ogimage from "../og.png";
+const canonical = "" + new URL(Astro.url.pathname, Astro.site);
+const ogurl = "" + new URL(ogimage?.src ?? "/og", Astro.site);
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>404 - Remove Background Bulk</title>
+    <link rel="canonical" href={canonical} />
+    <meta
+      name="description"
+      content="Remove the background from your images in bulk for free"
+    />
+    <meta property="og:title" content="Remove Background Bulk" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta
+      property="og:description"
+      content="Remove the background from your images in bulk for free"
+    />
+    <meta property="og:image" content={ogurl} />
+  </head>
+  <body class="flex flex-col items-center justify-center h-full min-h-screen gap-4 bg-gradient-to-t from-neutral-100 to-white">
+      <h1 class="font-bold text-9xl text-blue-500">404</h1>
+      <a href="/" class="underline">Return home ➝</a>
+  </body>
+</html>
