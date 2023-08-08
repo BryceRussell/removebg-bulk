@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "cp node_modules\\@imgly\\background-removal\\dist\\*.wasm public\\ && cp node_modules\\@imgly\\background-removal\\dist\\*.onnx public\\ && astro build",
+    "build:windows": "copy node_modules\\@imgly\\background-removal\\dist\\*.wasm public\\ && copy node_modules\\@imgly\\background-removal\\dist\\*.onnx public\\ && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
