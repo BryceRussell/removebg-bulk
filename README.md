@@ -13,7 +13,7 @@ Remove the background from your images in bulk for free
 
 # Hosting
 
-**locally**: (Fastest)
+**local**: (Fastest)
 - Clone project and install depencencies
 - Use the command `pnpm build` on Linux or `pnpm build:windows` for Windows
 - Use the command `pnpm preview` to run a local server for viewing and using the tool
