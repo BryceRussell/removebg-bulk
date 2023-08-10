@@ -8,8 +8,7 @@ Remove the background from your images in bulk for free
 - Bulk/Automatic
 - Easy to use
 - 100% safe
-
-> [!NOTE]  
+ 
 > Powered by [`@imgly/background-removal`](https://github.com/imgly/background-removal-js)
 
 # Hosting
